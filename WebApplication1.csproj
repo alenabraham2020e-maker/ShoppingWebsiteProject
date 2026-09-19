@@ -1,0 +1,333 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9EA3F6E9-BBBC-4DB3-BF98-3B60EAC1A45D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Add_Category.aspx" />
+    <Content Include="Add_Product.aspx" />
+    <Content Include="Admin_Home.aspx" />
+    <Content Include="Admin_Register.aspx" />
+    <Content Include="Cart.aspx" />
+    <Content Include="css\ajax-loader.gif" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\swiper-bundle.min.css" />
+    <Content Include="css\vendor.css" />
+    <Content Include="Edit Product.aspx" />
+    <Content Include="Edit_Category.aspx" />
+    <Content Include="images\arct-icon.png" />
+    <Content Include="images\banner-image-1.jpg" />
+    <Content Include="images\banner-image-2.jpg" />
+    <Content Include="images\banner-image-3.jpg" />
+    <Content Include="images\banner-image-4.jpg" />
+    <Content Include="images\banner-image-5.jpg" />
+    <Content Include="images\banner-image-6.jpg" />
+    <Content Include="images\bg-newsletter.jpg" />
+    <Content Include="images\cat-item1.jpg" />
+    <Content Include="images\cat-item2.jpg" />
+    <Content Include="images\cat-item3.jpg" />
+    <Content Include="images\cat-large-item1.jpg" />
+    <Content Include="images\cat-large-item2.jpg" />
+    <Content Include="images\cat-large-item3.jpg" />
+    <Content Include="images\cat-sm-item.jpg" />
+    <Content Include="images\cat-sm-item2.jpg" />
+    <Content Include="images\cat-sm-item3.jpg" />
+    <Content Include="images\collection-banner.jpg" />
+    <Content Include="images\dhl-logo.png" />
+    <Content Include="images\insta-item1.jpg" />
+    <Content Include="images\insta-item2.jpg" />
+    <Content Include="images\insta-item3.jpg" />
+    <Content Include="images\insta-item4.jpg" />
+    <Content Include="images\insta-item5.jpg" />
+    <Content Include="images\insta-item6.jpg" />
+    <Content Include="images\light-logo.png" />
+    <Content Include="images\logo.svg" />
+    <Content Include="images\logo1.png" />
+    <Content Include="images\logo2.png" />
+    <Content Include="images\logo3.png" />
+    <Content Include="images\logo4.png" />
+    <Content Include="images\logo5.png" />
+    <Content Include="images\main-logo.png" />
+    <Content Include="images\master-card.png" />
+    <Content Include="images\newsletter-image.jpg" />
+    <Content Include="images\pattern-bg.png" />
+    <Content Include="images\paypal-card.png" />
+    <Content Include="images\post-image1.jpg" />
+    <Content Include="images\post-image2.jpg" />
+    <Content Include="images\post-image3.jpg" />
+    <Content Include="images\post-image4.jpg" />
+    <Content Include="images\post-image5.jpg" />
+    <Content Include="images\post-image6.jpg" />
+    <Content Include="images\post-image7.jpg" />
+    <Content Include="images\post-image8.jpg" />
+    <Content Include="images\post-image9.jpg" />
+    <Content Include="images\post-large-image1.jpg" />
+    <Content Include="images\post-large-image2.jpg" />
+    <Content Include="images\post-large-image3.jpg" />
+    <Content Include="images\post-large-image4.jpg" />
+    <Content Include="images\post-small-image1.jpg" />
+    <Content Include="images\post-small-image2.jpg" />
+    <Content Include="images\post-small-image3.jpg" />
+    <Content Include="images\product-item-1.jpg" />
+    <Content Include="images\product-item-10.jpg" />
+    <Content Include="images\product-item-2.jpg" />
+    <Content Include="images\product-item-3.jpg" />
+    <Content Include="images\product-item-4.jpg" />
+    <Content Include="images\product-item-5.jpg" />
+    <Content Include="images\product-item-6.jpg" />
+    <Content Include="images\product-item-7.jpg" />
+    <Content Include="images\product-item-8.jpg" />
+    <Content Include="images\product-item-9.jpg" />
+    <Content Include="images\single-image-2.jpg" />
+    <Content Include="images\text-pattern.png" />
+    <Content Include="images\video-image-2.jpg" />
+    <Content Include="images\video-image.jpg" />
+    <Content Include="images\visa-card.png" />
+    <Content Include="images\wishlist-item1.jpg" />
+    <Content Include="images\wishlist-item2.jpg" />
+    <Content Include="images\wishlist-item3.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="js\script.min.js" />
+    <Content Include="js\SmoothScroll.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="photos\Screenshot 2026-07-24 110158.png" />
+    <Content Include="photos\Screenshot_2026-07-27_101048.png" />
+    <Content Include="photos\Screenshot_2026-07-27_103442.png" />
+    <Content Include="photos\Screenshot_2026-07-27_103700.png" />
+    <Content Include="photos\Screenshot_2026-07-27_103831.png" />
+    <Content Include="photos\Screenshot_2026-07-27_104020.png" />
+    <Content Include="readme.txt" />
+    <Content Include="Register.aspx" />
+    <Content Include="style.css" />
+    <Content Include="User_Home.aspx" />
+    <Content Include="User_Register.aspx" />
+    <Content Include="ViewOneProduct.aspx" />
+    <Content Include="ViewProducts.aspx" />
+    <Content Include="View_Cart.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Category.aspx.cs">
+      <DependentUpon>Add_Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Category.aspx.designer.cs">
+      <DependentUpon>Add_Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Product.aspx.cs">
+      <DependentUpon>Add_Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Product.aspx.designer.cs">
+      <DependentUpon>Add_Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Home.aspx.cs">
+      <DependentUpon>Admin_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Home.aspx.designer.cs">
+      <DependentUpon>Admin_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Register.aspx.cs">
+      <DependentUpon>Admin_Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Register.aspx.designer.cs">
+      <DependentUpon>Admin_Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionClass.cs" />
+    <Compile Include="Edit Product.aspx.cs">
+      <DependentUpon>Edit Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit Product.aspx.designer.cs">
+      <DependentUpon>Edit Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Category.aspx.cs">
+      <DependentUpon>Edit_Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit_Category.aspx.designer.cs">
+      <DependentUpon>Edit_Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="s1.Master.cs">
+      <DependentUpon>s1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="s1.Master.designer.cs">
+      <DependentUpon>s1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Home.aspx.cs">
+      <DependentUpon>User_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Home.aspx.designer.cs">
+      <DependentUpon>User_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Register.aspx.cs">
+      <DependentUpon>User_Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Register.aspx.designer.cs">
+      <DependentUpon>User_Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOneProduct.aspx.cs">
+      <DependentUpon>ViewOneProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewOneProduct.aspx.designer.cs">
+      <DependentUpon>ViewOneProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProducts.aspx.cs">
+      <DependentUpon>ViewProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewProducts.aspx.designer.cs">
+      <DependentUpon>ViewProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View_Cart.aspx.cs">
+      <DependentUpon>View_Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_Cart.aspx.designer.cs">
+      <DependentUpon>View_Cart.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="s1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57136</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57136/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
